@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Colors: 
+    Dark Purple: #140252. Reg. Purple: #22007B. Blue: #0D00A5. Pink: #FF00FF. */
+
+body {
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+header {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    top: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #000000;
+    z-index: 10;
+}
+
+.logo {
+    display: inline-flex;
+    float: left;
+    top: 0;
+    width: calc(50px + 1vw);
+    height: auto;
+    margin-left: 70px;
+}
+
+nav {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    display: inline-flex;
+    justify-content: flex-end;
+    font-size: calc(10px + .2vw);
+    flex-basis: 100%;
+}
+
+nav a {
+    display: inline-block;
+    padding: 15px;
+    color: #828282;
+    text-decoration: none;
+    text-transform: uppercase;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+nav a:active {
+    color: #ECECEC;
+}
+
+
+/*------------------------------------HOME-----------------------------*/
+
+.hero {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(images/hero-intro.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.inner-hero {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100vw;
+    position: relative;
+    top: -7vh;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Muli', Arial, Helvetica, sans-serif;
+    font-size: calc(18px + 2vw);
+    font-weight: bolder;
+    margin-left: 10vw;
+    font-weight: 600;
+    text-align: left;
+}
+
+
+/*--------------------------------------ABOUT----------------------------*/
+
+.about {
+    position: relative;
+    background-color: #ffffff;
+    display: inline-flex;
+    width: 50vw;
+    justify-content: center;
+    flex-direction: column;
+    padding: 15% 0;
+}
+
+h2 {
+    margin-left: 10%;
+    margin-bottom: 15px;
+    text-align: left;
+    font-family: 'Muli', Arial, Helvetica, sans-serif;
+    font-size: calc(16px + 2vw);
+    color: #1e1e1e;
+}
+
+p {
+    margin-left: 10%;
+    color: #1e1e1e;
+    line-height: 38px;
+    ;
+    text-align: left;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: calc(14px + 1vw);
+}
+
+#profilepic {
+    float: right;
+    margin-right: 10%;
+    margin-top: 15vh;
+    max-width: 30vw;
+    height: auto;
+}
+
+
+/*-----------------------------------SKILLS---------------------*/
+
+.skills {
+    position: relative;
+    width: 100vw;
+    height: 93vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-image: url(images/hero-skills.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h3 {
+    margin-top: 5%;
+    margin-bottom: 15px;
+    text-align: left;
+    font-family: 'Muli', Arial, Helvetica, sans-serif;
+    font-size: calc(16px + 2vw);
+    color: #ffffff;
+}
