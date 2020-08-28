@@ -106,7 +106,7 @@ h1 {
 }
 
 h2 {
-    margin-left: 10%;
+    margin-left: 10vw;
     margin-bottom: 15px;
     text-align: left;
     font-family: 'Muli', Arial, Helvetica, sans-serif;
@@ -115,7 +115,7 @@ h2 {
 }
 
 p {
-    margin-left: 10%;
+    margin-left: 10vw;
     color: #1e1e1e;
     line-height: 38px;
     ;
@@ -139,9 +139,6 @@ p {
     position: relative;
     width: 100vw;
     height: 93vh;
-    display: flex;
-    justify-content: center;
-    text-align: center;
     background-image: url(images/hero-skills.jpg);
     background-size: cover;
     background-position: center center;
@@ -150,10 +147,28 @@ p {
 }
 
 h3 {
-    margin-top: 5%;
-    margin-bottom: 15px;
+    margin: 0 10%;
+    padding-top: 10%;
     text-align: left;
     font-family: 'Muli', Arial, Helvetica, sans-serif;
     font-size: calc(16px + 2vw);
     color: #ffffff;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.row {
+    display: inline-flex;
+    flex-flow: row;
+    padding: 30px;
+    justify-content: center;
+}
+
+.row img {
+    max-width: 12.5vw;
+    padding: 10px 30px;
 }
