@@ -7,7 +7,7 @@
 
 
 /* Colors: 
-    Dark Purple: #140252. Reg. Purple: #22007B. Blue: #0D00A5. Pink: #FF00FF. */
+    Dark Purple: #140252. Reg. Purple: #22007B. Blue: #0D00A5. Pink: #D736A6. */
 
 body {
     color: #ffffff;
@@ -138,8 +138,8 @@ p {
 .skills {
     position: relative;
     width: 100vw;
-    height: 93vh;
-    background-image: url(images/hero-skills.jpg);
+    height: 105vh;
+    background-image: url(images/WebsiteHero33-01.jpg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -147,8 +147,9 @@ p {
 }
 
 h3 {
-    margin: 0 10%;
-    padding-top: 10%;
+    margin-left: 10%;
+    margin-bottom: 15px;
+    padding-top: 15%;
     text-align: left;
     font-family: 'Muli', Arial, Helvetica, sans-serif;
     font-size: calc(16px + 2vw);
@@ -157,18 +158,20 @@ h3 {
 
 .container {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+    margin-left: 10vw;
+    flex-flow: row wrap;
 }
 
 .row {
     display: inline-flex;
-    flex-flow: row;
-    padding: 30px;
-    justify-content: center;
+    padding: 0;
+    justify-content: flex-start;
 }
 
 .row img {
-    max-width: 12.5vw;
-    padding: 10px 30px;
+    min-width: 15%;
+    width: 20%;
+    padding-top: 40px;
+    padding-right: 40px;
 }
