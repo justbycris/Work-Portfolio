@@ -16,13 +16,13 @@
             <a href="#home">Home</a>
             <a href="#aboutme">About</a>
             <a href="#skills">Skills</a>
-            <a href="#">Projects</a>
-            <a href="#">Contact</a>
+            <a href="#work">Work</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
     <section class="hero" id="home">
         <div class="inner-hero">
-            <h1>I'm <span style="color: #D736A6">Cristi</span>,<br> Graphic Designer <br>& Front-End Developer </h1>
+            <h1>Hello I'm <span style="color: #D736A6">Cristi</span>,<br> Graphic Designer <br>& Front-End Developer </h1>
         </div>
     </section>
     <div class="about" id="aboutme">
@@ -39,15 +39,62 @@
                 <img src="images/html.svg" alt="html icon">
                 <img src="images/CSS.svg" alt="css icon">
                 <img src="images/js.svg" alt="Javascript icon">
-            </div>
-            <div class="row">
                 <img src="images/sass.svg" alt="sass icon">
                 <img src="images/github.svg" alt="github icon">
                 <img src="images/adobe.svg" alt="Photoshop icon">
             </div>
         </div>
-
-
+    </div>
+    <div class="projects" id="work">
+        <h2>Projects</h2>
+        <div class="container-work">
+            <div class="row-work">
+                <div class="work">
+                    <p>Responsive website 1</p>
+                </div>
+            </div>
+            <div class="row-work">
+                <div class="work">
+                    <p>Horoscope Website</p>
+                </div>
+            </div>
+            <div class="row-work">
+                <div class="work">
+                    <p>Memory Card Game</p>
+                </div>
+            </div>
+            <div class="row-work">
+                <div class="work">
+                    <p>Coffee Website</p>
+                </div>
+            </div>
+            <div class="row-work">
+                <div class="work">
+                    <p>Create an App</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contact" id="contact">
+        <h3> Contact Me</h3>
+        <div class="contact-box">
+            <form action="#" name="contact_form">
+                <label for="first_name">First Name</label>
+                <input name="first_name" type="text" required placeholder="Enter Your Name" />
+                <br>
+                <label for="last_name">Last Name</label>
+                <input name="last_name" type="text" required placeholder="Enter Your Last Name" />
+                <br>
+                <label for="email">Email</label>
+                <input name="email" type="email" required placeholder="example@email.com" />
+                <br>
+                <label for="message">Message</label><br>
+                <textarea name="message" cols="30" rows="10" placeholder="Enter your message here ..." required> </textarea>
+                <div class="center">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
     </div>
 
     <script src="app.js"></script>
