@@ -208,6 +208,13 @@ h3 {
     flex-flow: row wrap;
 }
 
+.work img {
+    display: block;
+    width: 25%;
+    height: auto;
+    justify-content: center;
+}
+
 
 /*------------------------------------------CONTACT ME---------------------------------*/
 
