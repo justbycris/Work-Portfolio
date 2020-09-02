@@ -53,6 +53,10 @@ nav a {
     cursor: pointer;
 }
 
+nav a:hover {
+    color: #D736A6;
+}
+
 nav a:active {
     color: #ECECEC;
 }
@@ -208,11 +212,31 @@ h3 {
     flex-flow: row wrap;
 }
 
+.work {
+    text-align: center;
+}
+
+.work a {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #1e1e1e;
+}
+
 .work img {
     display: block;
     width: 25%;
     height: auto;
+    margin: auto;
     justify-content: center;
+    padding: 15px 0;
+}
+
+.work img:hover {
+    color: grayscale;
+    transition: .5s;
+    transform: scale(1.1);
 }
 
 
@@ -307,10 +331,10 @@ footer {
     position: static;
     bottom: 0;
     width: 100vw;
-    height: 15vh;
+    height: 10vh;
     background-color: #1e1e1e;
     display: flex;
-    padding: 20px 0;
+    padding: 10px 0;
     box-sizing: border-box;
 }
 
@@ -322,8 +346,9 @@ footer {
 }
 
 .ftr-row img {
+    box-sizing: border-box;
     display: inline-flex;
-    width: 10%;
+    width: 45px;
     height: auto;
-    padding: 10px 10px 10px 0;
+    padding: 15px 15px 15px 0;
 }
