@@ -12,19 +12,24 @@
 <body>
     <header>
         <img src="images/logo.png" class="logo">
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#aboutme">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#work">Work</a>
-            <a href="#contact">Contact</a>
-        </nav>
+        <div class="nav">
+            <label for="toggle">&#9776;</label>
+            <input type="checkbox" id="toggle">
+            <div class="menu">
+                <a href="#home">Home</a>
+                <a href="#aboutme">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#work">Work</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
     </header>
     <section class="hero" id="home">
         <div class="inner-hero">
             <h1>Hi, I'm <span style="color: #D736A6">Cristi</span>,<br> Graphic Designer <br>& Front-End Developer </h1>
         </div>
     </section>
+
     <div class="about" id="aboutme">
         <h2>About Me</h2>
         <p>I'm a graphic designer and self-taught <br>front-end developer who is passionate about learning, working hard and connecting with people. I have lived in Mexico, South Carolina, Florida and now NYC. I love creating cool stuff on the web.
@@ -49,37 +54,43 @@
         </div>
     </div>
     <div class="projects" id="work">
-        <h2>Projects</h2>
+        <h2>Work</h2>
         <div class="container-work">
             <div class="row-work">
+                <img src="images/housecoffee.png" alt="House Coffee website.">
+                <a href="https://housecoffeeco.netlify.app/" target="_blank"><button type="button" id="work-btn">Live</button></a>
+                <a href="https://github.com/justbycris/coffebrand-website" target="_blank"><button type="button" id="work-btn">Code</button></a>
+            </div>
+            <div class="row-work">
 
-                <a href="https://housecoffeeco.netlify.app/" target="_blank"><img src="images/housecoffee.png" alt="House Coffee website."> House Coffee Website</a>
+                <img src="images/horoscope.png" alt="Horoscope website project by Cristina Gutierrez.">
+                <a href="https://horoscopebycris.netlify.app/" target="_blank"><button type="button" id="work-btn">Live</button></a>
+                <a href="https://github.com/justbycris/HoroscopeGenerator" target="_blank"><button type="button" id="work-btn">Code</button></a>
 
             </div>
             <div class="row-work">
 
-                <a href="https://horoscopebycris.netlify.app/" target="_blank"><img src="images/horoscope.png" alt="Horoscope website project by Cristina Gutierrez.">Horoscope Website</a>
+                <img src="images/sign-up-form.png" alt="Sign Up form project by Cristina Gutierrez.">
+                <a href="https://sign-up-form-bycris.netlify.app/" target="_blank"><button type="button" id="work-btn">Live</button></a>
+                <a href="https://github.com/justbycris/Front-end-Mentor-Challenge" target="_blank"><button type="button" id="work-btn">Code</button></a>
 
+            </div>
+            <div class="row-work">
+                <img src="images/calculator.png" alt="Calculator website.">
+                <a href="https://calculatorbycris.netlify.app/" target="_blank"><button type="button" id="work-btn">Live</button></a>
+                <a href="https://github.com/justbycris/Calculator" target="_blank"><button type="button" id="work-btn">Code</button></a>
+            </div>
+
+            <div class="row-work">
+                <img src="images/SM-dashboard-final-01.png" alt="Social Media dashboard landing page, front-end project.">
+                <a href="https://socialmedia-dashboard-bycris.netlify.app/" target="_blank"><button type="button" id="work-btn">Live</button></a>
+                <a href="https://github.com/justbycris/Social-Media-Dashboard" target="_blank"><button type="button" id="work-btn">Code</button></a>
 
             </div>
             <div class="row-work">
 
-                <a href="https://sign-up-form-bycris.netlify.app/" target="_blank"><img src="images/sign-up-form.png" alt="Sign Up form project by Cristina Gutierrez.">Sign Up Form</a>
-
-            </div>
-            <div class="row-work">
-
-                <a href="https://calculatorbycris.netlify.app/" target="_blank"><img src="images/calculator.png" alt="Calculator website.">Calculator</a>
-
-            </div>
-            <div class="row-work">
-                <a href="https://socialmedia-dashboard-bycris.netlify.app/" target="_blank"><img src="images/SM-dashboard-final-01.png" alt="Social Media dashboard landing page, front-end project.">Social Media<br>Dashboard</a>
-
-            </div>
-            <div class="row-work">
-
-                <a href="https://cristiguti.wixsite.com/design" target="_blank"><img src="images/graphic-design-work-01.png" alt="Graphic design portfolio by Cristina Gutierrez.">Graphic Design</a>
-
+                <img src="images/graphic-design-work-01.png" alt="Graphic design portfolio by Cristina Gutierrez.">
+                <a href="https://cristiguti.wixsite.com/design" target="_blank"><button type="button" id="work-btn">Design Work</button></a>
             </div>
         </div>
     </div>

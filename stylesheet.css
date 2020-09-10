@@ -14,10 +14,13 @@ body {
     overflow-x: hidden;
 }
 
+
+/*------------------------------------HEADER-----------------------*/
+
 header {
     position: fixed;
     display: flex;
-    width: 100%;
+    width: 100vw;
     align-items: center;
     top: 0;
     padding-top: 15px;
@@ -27,38 +30,51 @@ header {
 }
 
 .logo {
-    display: inline-flex;
-    float: left;
-    top: 0;
+    display: inline-block;
+    position: absolute;
     width: calc(50px + 1vw);
     height: auto;
-    margin-left: 70px;
+    margin-left: 3rem;
 }
 
-nav {
+
+/*------------HAMBURGER MENU=---------*/
+
+.nav {
+    justify-content: flex-end;
+    text-align: right;
+    height: 50px;
+    line-height: 50px;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    display: inline-flex;
-    justify-content: flex-end;
-    font-size: calc(10px + .2vw);
-    flex-basis: 100%;
+    font-size: calc(12px + .2vw);
+    width: 100%;
+    box-sizing: border-box;
 }
 
-nav a {
+.menu {
+    display: block;
+    margin: 0 30px 0 0;
+}
+
+.menu a {
     display: inline-block;
-    padding: 15px;
-    color: #828282;
     text-decoration: none;
-    text-transform: uppercase;
-    justify-content: flex-end;
-    cursor: pointer;
+    color: #828282;
+    margin: 0 20px;
+    line-height: 50px;
 }
 
-nav a:hover {
-    color: #D736A6;
+label {
+    margin: 0 0 0 0;
+    font-size: 25px;
+    line-height: 50px;
+    display: none;
+    margin: 0 20px;
+    text-align: right;
 }
 
-nav a:active {
-    color: #ECECEC;
+#toggle {
+    display: none;
 }
 
 
@@ -80,7 +96,6 @@ nav a:active {
 
 .inner-hero {
     display: inline-block;
-    box-sizing: border-box;
     width: 100vw;
     position: relative;
     top: -7vh;
@@ -120,6 +135,7 @@ h1 {
     justify-content: center;
     flex-direction: column;
     padding: 15% 0;
+    box-sizing: border-box;
 }
 
 h2 {
@@ -144,7 +160,7 @@ p {
 #profilepic {
     float: right;
     margin-right: 10%;
-    margin-top: 15vh;
+    margin-top: 20vh;
     max-width: 30vw;
     height: auto;
 }
@@ -155,7 +171,7 @@ p {
 .skills {
     position: relative;
     background-color: #ffffff;
-    display: inline-flex;
+    display: flex;
     width: 100%;
     justify-content: center;
     flex-direction: column;
@@ -200,12 +216,16 @@ h3 {
 }
 
 
-/*-------------------------------------------PROJECTS--------------------------------*/
+/*-------------------------------------------WORK--------------------------------*/
+
+#work {
+    padding: 90px 0;
+}
 
 .projects {
     background-color: #ffffff;
     width: 100%;
-    margin: 15% 0;
+    margin: 5% 0;
 }
 
 .container-work {
@@ -218,23 +238,10 @@ h3 {
 }
 
 .row-work {
-    display: inline-flex;
-    flex-flow: row wrap;
+    display: flex;
+    flex-flow: column wrap;
     text-align: center;
-}
-
-.row-work a {
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    text-decoration: none;
-    font-weight: 600;
-    color: #1e1e1e;
-    text-align: center;
-    padding: 15px 15px;
-}
-
-.row-work a:hover {
-    color: #D736A6;
+    margin: 15px 15px;
 }
 
 .row-work img {
@@ -244,13 +251,34 @@ h3 {
     justify-content: center;
     padding: 15px 15px;
     transition: .5s ease;
-    backface-visibility: hidden;
     opacity: 1;
+    box-sizing: border-box;
 }
 
 .row-work img:hover {
     color: grayscale;
     transform: scale(1.1);
+}
+
+#work-btn {
+    display: block;
+    border: 2px solid #000000;
+    background-color: #000000;
+    justify-content: center;
+    width: 90%;
+    height: auto;
+    margin: 15px auto;
+    color: #ffffff;
+    text-align: center;
+}
+
+#work-btn:hover {
+    background-color: #D736A6;
+    border: 2px solid #d736a6;
+}
+
+.row-work a {
+    text-decoration: none;
 }
 
 
@@ -263,7 +291,9 @@ h3 {
     width: 100%;
     justify-content: center;
     flex-direction: column;
-    padding: 8% 0;
+    padding-bottom: 12%;
+    padding-top: 10%;
+    box-sizing: border-box;
 }
 
 .contact-box {
@@ -319,12 +349,12 @@ button {
     display: block;
     font-size: 16px;
     padding: 10px 5px;
+    box-sizing: border-box;
     width: 150px;
     border: none;
     border-radius: 5px;
     outline: none;
     background-color: #D736A6;
-    margin-left: 10px;
 }
 
 button:active {
@@ -368,14 +398,20 @@ footer {
 /*---------------------------------SCROLL BAR---------------------------------*/
 
 body::-webkit-scrollbar {
-    width: .5em;
-    background-color: #1e1e1e;
+    width: 3px;
+    color: white;
+    box-sizing: border-box;
 }
 
 
 /*---------------------------------------MEDIA QUERIES-------------------------------------*/
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
+    body,
+    html {
+        width: 100%;
+        overflow-x: hidden !important;
+    }
     #profilepic {
         display: none;
     }
@@ -383,9 +419,32 @@ body::-webkit-scrollbar {
         width: 100vw;
     }
     .containerskills {
-        width: 100vd;
+        width: 100vw;
+        justify-content: center;
     }
     .row-work img {
         width: 50vw;
+    }
+    label {
+        display: block;
+        cursor: pointer;
+    }
+    .nav {
+        margin-right: 0;
+    }
+    .menu {
+        text-align: center;
+        width: 100%;
+        display: none;
+        box-sizing: border-box;
+        background-color: #000000;
+    }
+    .menu a {
+        display: block;
+        border-bottom: 1px solid #D736A6;
+        margin: 0;
+    }
+    #toggle:checked+.menu {
+        display: block;
     }
 }
