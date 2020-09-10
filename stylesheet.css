@@ -181,17 +181,16 @@ h3 {
     display: flex;
     justify-content: flex-start;
     margin-left: 10%;
-    flex-direction: row;
+    flex-flow: row wrap;
     padding-bottom: 50px;
 }
 
 .row {
     width: 50%;
     margin-top: 20px;
-    display: flex;
+    display: block;
     align-items: left;
     justify-content: flex-start;
-    flex-wrap: wrap;
 }
 
 .row img {
@@ -204,21 +203,18 @@ h3 {
 /*-------------------------------------------PROJECTS--------------------------------*/
 
 .projects {
-    display: flex;
-    justify-content: center;
-    vertical-align: middle;
-    flex-direction: column;
     background-color: #ffffff;
     width: 100%;
     margin: 15% 0;
 }
 
 .container-work {
-    display: block;
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    flex-flow: row wrap;
     width: 100%;
-    flex-direction: row;
     justify-content: space-evenly;
-    margin-left: 10vw;
 }
 
 .row-work {
@@ -287,6 +283,7 @@ form label {
 
 input {
     width: 70%;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
     color: #ffffff;
     background-color: transparent;
     border-top-style: none;
@@ -305,27 +302,14 @@ input::placeholder {
     padding-bottom: 10px;
 }
 
-textarea {
+#error_message {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    width: 70%;
-    color: white;
-    border: none;
-    outline: none;
-    margin-top: 30px;
-    background-color: transparent;
-    border-top-style: none;
-    border-left-style: none;
-    border-right-style: none;
-    border-bottom: 4px solid #D736A6;
-    padding-bottom: 10px;
-}
-
-textarea::placeholder {
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    font-weight: 300;
-    font-size: 14px;
-    color: #828282;
-    padding-bottom: 10px;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 16px;
+    color: #ffffff;
+    z-index: 10;
+    margin-left: 10vw;
 }
 
 button {
@@ -340,6 +324,15 @@ button {
     border-radius: 5px;
     outline: none;
     background-color: #D736A6;
+    margin-left: 10px;
+}
+
+button:active {
+    transform: translateY(2px);
+}
+
+button:hover {
+    background-color: #ff3ec5;
 }
 
 
@@ -372,4 +365,27 @@ footer {
 }
 
 
+/*---------------------------------SCROLL BAR---------------------------------*/
+
+body::-webkit-scrollbar {
+    width: .5em;
+    background-color: #1e1e1e;
+}
+
+
 /*---------------------------------------MEDIA QUERIES-------------------------------------*/
+
+@media only screen and (max-width: 600px) {
+    #profilepic {
+        display: none;
+    }
+    .about {
+        width: 100vw;
+    }
+    .containerskills {
+        width: 100vd;
+    }
+    .row-work img {
+        width: 50vw;
+    }
+}

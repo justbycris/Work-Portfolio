@@ -85,20 +85,26 @@
     </div>
     <div class="contact" id="contact">
         <h3> Contact Me</h3>
+        <div id="error_message">
+
+        </div>
         <div class="contact-box">
-            <form action="#" name="contact_form">
-
-                <input name="first_name" type="text" required placeholder="Enter Your Name" />
+            <form action="" onsubmit="return validate();" id="form">
+                <label for="name"></label>
+                <input name="name" type="text" id="name" placeholder="Full Name" required/>
                 <br>
 
-                <input name="last_name" type="text" required placeholder="Enter Your Last Name" />
+                <label for="subject"></label>
+                <input name="subject" type="text" id="subject" placeholder="Subject" required/>
                 <br>
 
-                <input name="email" type="email" required placeholder="example@email.com" />
+                <label for="email"></label>
+                <input name="email" type="email" id="email" placeholder="example@email.com" required/>
                 <br>
+                <label for="message"></label>
+                <input name="message" type="text" id="message" placeholder="Message" required>
 
-                <textarea name="message" cols="30" rows="10" placeholder="Message" required></textarea>
-                <button>Submit</button>
+                <button type="submit" form="form" value="Submit" id="submit">Submit</button>
             </form>
         </div>
     </div>
