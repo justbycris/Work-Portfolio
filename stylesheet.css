@@ -417,6 +417,7 @@ body::-webkit-scrollbar {
     }
     .about {
         width: 100vw;
+        padding: 100px 0;
     }
     .containerskills {
         width: 100vw;
