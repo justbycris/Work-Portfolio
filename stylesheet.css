@@ -1,17 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
 /* Colors: 
     Dark Purple: #140252. Reg. Purple: #22007B. Blue: #0D00A5. Pink: #D736A6. */
 
-body {
+body,
+html {
     color: #ffffff;
     overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 
@@ -79,6 +75,10 @@ label {
 
 .menu a:hover {
     color: #ffffff;
+}
+
+.menu a:active {
+    color: #D736A6;
 }
 
 
@@ -161,7 +161,7 @@ p {
     font-weight: 300;
 }
 
-#profilepic {
+.profilepic {
     float: right;
     margin-right: 10%;
     margin-top: 20vh;
@@ -253,7 +253,7 @@ h3 {
     width: 25vw;
     height: auto;
     justify-content: center;
-    padding: 15px 15px;
+    margin: 15px 15px;
     transition: .5s ease;
     opacity: 1;
     box-sizing: border-box;
@@ -416,7 +416,7 @@ body::-webkit-scrollbar {
         width: 100%;
         overflow-x: hidden !important;
     }
-    #profilepic {
+    .profilepic {
         display: none;
     }
     .about {

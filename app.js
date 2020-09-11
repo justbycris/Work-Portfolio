@@ -29,4 +29,4 @@ form.addEventListener('submit', (e) => {
         e.preventDefault()
         error.innerText = messages.join(', ')
     }
-})
+});
