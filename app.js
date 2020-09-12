@@ -1,3 +1,8 @@
+function clickAnyAreaOnMenu() {
+    let toggle = document.getElementById("toggle");
+    toggle.checked = false;
+}
+
 const name = document.getElementById('name');
 const subject = document.getElementById('subject');
 const email = document.getElementById('email');
@@ -29,4 +34,5 @@ form.addEventListener('submit', (e) => {
         e.preventDefault()
         error.innerText = messages.join(', ')
     }
+
 });
