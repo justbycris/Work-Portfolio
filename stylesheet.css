@@ -172,18 +172,12 @@ p {
 /*-----------------------------------SKILLS---------------------*/
 
 .skills {
-    position: relative;
     background-color: #ffffff;
     display: flex;
-    width: 100%;
-    justify-content: center;
+    width: 100vw;
     flex-direction: column;
-    padding: 15% 0;
-    background-image: url(images/WebsiteHero33-01.jpg);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    padding: 10% 0;
+    background-color: #000000;
 }
 
 h3 {
@@ -196,26 +190,40 @@ h3 {
 }
 
 .containerskills {
-    height: 100%;
     display: flex;
-    justify-content: flex-start;
-    margin-left: 10%;
+    justify-content: center;
     flex-flow: row wrap;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
+    width: 75%;
+    margin-top: 35px;
+    margin-left: 25px;
 }
 
 .row {
-    width: 50%;
-    margin-top: 20px;
     display: block;
-    align-items: left;
+    flex-direction: column;
     justify-content: flex-start;
+    text-align: center;
+    margin: 0 40px;
 }
 
 .row img {
     min-width: 80px;
     max-width: 150px;
-    justify-content: flex-start;
+}
+
+h5 {
+    font-family: 'Muli', Arial, Helvetica, sans-serif;
+    font-size: calc(14px + .8vw);
+    color: #ffffff;
+}
+
+#githubtitle {
+    margin-top: 35px;
+}
+
+#reactsubtitle {
+    margin-top: 41px;
 }
 
 
