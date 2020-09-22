@@ -229,14 +229,11 @@ h5 {
 
 /*-------------------------------------------WORK--------------------------------*/
 
-#work {
-    padding: 90px 0;
-}
-
 .projects {
     background-color: #ffffff;
-    width: 100%;
-    margin: 5% 0;
+    width: 100vw;
+    padding-top: 10%;
+    padding-bottom: 10%;
 }
 
 .container-work {
@@ -249,34 +246,62 @@ h5 {
 }
 
 .row-work {
-    display: flex;
+    position: relative;
+    display: block;
+    justify-content: center;
+    align-items: center;
     flex-flow: column wrap;
     text-align: center;
-    margin: 15px 15px;
 }
 
 .row-work img {
     display: block;
-    width: 25vw;
+    position: relative;
+    width: 400px;
     height: auto;
-    justify-content: center;
     margin: 15px 15px;
     transition: .5s ease;
     opacity: 1;
     box-sizing: border-box;
 }
 
-.row-work img:hover {
-    color: grayscale;
-    transform: scale(1.1);
+div.overlay {
+    position: absolute;
+    top: 0;
+    width: 400px;
+    margin: 15px 15px;
+    height: 400px;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+
+.overlay:hover {
+    opacity: 1;
+    transition: .2s ease-in;
+}
+
+h6 {
+    position: absolute;
+    font-family: 'Muli', Arial, Helvetica, sans-serif;
+    font-size: calc(14px + .8vw);
+    color: #ffffff;
+    z-index: 11;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 #work-btn {
     display: block;
     border: 2px solid #000000;
     background-color: #000000;
+    border-radius: 80px;
     justify-content: center;
-    width: 90%;
+    width: 150px;
     height: auto;
     margin: 15px auto;
     color: #ffffff;
@@ -291,6 +316,9 @@ h5 {
 .row-work a {
     text-decoration: none;
 }
+
+
+/*------------OVERLAY-------*/
 
 
 /*------------------------------------------CONTACT ME---------------------------------*/
