@@ -461,6 +461,8 @@ body::-webkit-scrollbar {
     .containerskills {
         width: 100vw;
         justify-content: center;
+        text-align: center;
+        margin: 0 auto;
     }
     .row-work img {
         width: 50vw;
