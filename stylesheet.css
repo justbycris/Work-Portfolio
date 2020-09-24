@@ -8,6 +8,7 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    width: 100vw;
 }
 
 
@@ -176,7 +177,7 @@ p {
     display: flex;
     width: 100vw;
     flex-direction: column;
-    padding: 10% 0;
+    padding: 5% 0;
     background-color: #000000;
 }
 
@@ -283,7 +284,7 @@ div.overlay {
     transition: .2s ease-in;
 }
 
-h6 {
+h5 {
     position: absolute;
     font-family: 'Muli', Arial, Helvetica, sans-serif;
     font-size: calc(14px + .8vw);
@@ -346,7 +347,8 @@ h6 {
 }
 
 form label {
-    margin-right: 10px;
+    font-size: 1px;
+    opacity: 0;
 }
 
 input {
@@ -390,7 +392,7 @@ button {
     box-sizing: border-box;
     width: 150px;
     border: none;
-    border-radius: 5px;
+    border-radius: 80px;
     outline: none;
     background-color: #D736A6;
 }
@@ -441,7 +443,7 @@ footer {
 
 body::-webkit-scrollbar {
     width: 3px;
-    color: white;
+    color: #1e1e1e;
     box-sizing: border-box;
 }
 
