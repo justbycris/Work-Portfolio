@@ -416,7 +416,6 @@ footer {
     position: static;
     bottom: 0;
     width: 100vw;
-    height: 10vh;
     background-color: #1e1e1e;
     display: flex;
     padding: 10px 0;
