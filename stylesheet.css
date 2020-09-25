@@ -61,7 +61,6 @@ header {
 }
 
 label {
-    margin: 0 0 0 0;
     font-size: 25px;
     line-height: 50px;
     display: none;
@@ -109,7 +108,6 @@ label {
 h1 {
     font-family: 'Muli', Arial, Helvetica, sans-serif;
     font-size: calc(18px + 2vw);
-    font-weight: bolder;
     margin-left: 10vw;
     font-weight: 600;
     text-align: left;
@@ -173,7 +171,6 @@ p {
 /*-----------------------------------SKILLS---------------------*/
 
 .skills {
-    background-color: #ffffff;
     display: flex;
     width: 100vw;
     flex-direction: column;
@@ -238,11 +235,10 @@ h4 {
 
 .container-work {
     display: flex;
-    justify-content: center;
     vertical-align: middle;
     flex-flow: row wrap;
     width: 100%;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .row-work {
@@ -271,6 +267,7 @@ div.overlay {
     width: 400px;
     margin: 15px 15px;
     height: 400px;
+    background: #000000;
     background: rgba(0, 0, 0, 0.9);
     display: flex;
     flex-direction: column;
@@ -295,9 +292,8 @@ h5 {
     padding: 0 15px;
 }
 
-#work-btn {
+.work-btn {
     display: block;
-    border: 2px solid #000000;
     background-color: #000000;
     border-radius: 80px;
     justify-content: center;
@@ -308,9 +304,8 @@ h5 {
     text-align: center;
 }
 
-#work-btn:hover {
+.work-btn:hover {
     background-color: #D736A6;
-    border: 2px solid #d736a6;
 }
 
 .row-work a {
@@ -360,8 +355,11 @@ input {
     border-left-style: none;
     border-right-style: none;
     border-bottom: 4px solid #D736A6;
-    outline: none;
     padding-bottom: 10px;
+}
+
+input:focus {
+    outline: none;
 }
 
 input::placeholder {
@@ -393,12 +391,15 @@ button {
     width: 150px;
     border: none;
     border-radius: 80px;
-    outline: none;
     background-color: #D736A6;
 }
 
 button:active {
     transform: translateY(2px);
+}
+
+button:focus {
+    outline: none;
 }
 
 button:hover {
@@ -426,7 +427,6 @@ footer {
     display: inline-flex;
     margin-left: 10vw;
     vertical-align: middle;
-    justify-content: left;
 }
 
 .ftr-row img {
