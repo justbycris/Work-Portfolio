@@ -232,7 +232,7 @@ h4 {
 .projects {
     background-color: #ffffff;
     width: 100vw;
-    padding-top: 10%;
+    padding-top: 5%;
     padding-bottom: 10%;
 }
 
@@ -471,6 +471,9 @@ body::-webkit-scrollbar {
     }
     .row-work img {
         width: 50vw;
+    }
+    div.overlay:hover {
+        display: none;
     }
     label {
         display: block;
