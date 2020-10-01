@@ -325,8 +325,7 @@ h5 {
     width: 100%;
     justify-content: center;
     flex-direction: column;
-    padding-bottom: 12%;
-    padding-top: 10%;
+    padding: 10% 0;
     box-sizing: border-box;
 }
 
