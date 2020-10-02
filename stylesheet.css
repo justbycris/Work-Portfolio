@@ -513,6 +513,6 @@ body::-webkit-scrollbar {
         width: 80%;
     }
     .contact-box button {
-        margin: 50px 0;
+        margin-top: 50px;
     }
 }
