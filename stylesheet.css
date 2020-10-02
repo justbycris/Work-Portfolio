@@ -325,7 +325,7 @@ h5 {
     width: 100%;
     justify-content: center;
     flex-direction: column;
-    padding: 12% 0;
+    padding: 10% 0;
     box-sizing: border-box;
 }
 
@@ -506,10 +506,13 @@ body::-webkit-scrollbar {
     #toggle:checked+.menu {
         display: block;
     }
+    .contact {
+        padding-top: 16%;
+    }
     .contact-box input {
         width: 80%;
     }
     .contact-box button {
-        margin-top: 50px;
+        margin: 50px 0;
     }
 }
