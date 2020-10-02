@@ -462,6 +462,16 @@ body::-webkit-scrollbar {
         width: 100vw;
         padding: 100px 0;
     }
+    .about p {
+        text-align: left;
+        padding-right: 40px
+    }
+    .logo {
+        margin-left: 2rem;
+    }
+    .nav label {
+        margin-right: 2rem;
+    }
     .containerskills {
         width: 100vw;
         justify-content: center;
@@ -495,5 +505,11 @@ body::-webkit-scrollbar {
     }
     #toggle:checked+.menu {
         display: block;
+    }
+    .contact-box input {
+        width: 80%;
+    }
+    .contact-box button {
+        margin-top: 50px;
     }
 }
