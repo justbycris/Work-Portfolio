@@ -325,19 +325,19 @@ h5 {
     width: 100%;
     justify-content: center;
     flex-direction: column;
-    padding: 10% 0;
+    padding: 12% 0;
     box-sizing: border-box;
 }
 
 .contact-box {
-    color: #ffffff;
-    line-height: 38px;
-    text-align: left;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-size: calc(14px + 1vw);
+    font-weight: 300;
+    line-height: 38px;
+    text-align: left;
+    color: #ffffff;
     width: 90vw;
     margin-left: 10vw;
-    font-weight: 300;
 }
 
 form label {
